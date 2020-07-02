@@ -6,19 +6,17 @@
     <title>Anomalous - Content and Design</title>
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet"></head>
 <body>
 
     <nav class="navbar">
     <h1 class="navbar__logo">anom<span class ="navbar__logo--secondary">a</span>lous</h1>
         <ul class="navbar__list">
-            <li class="navbar__list__item"><a href="#about" class="navbar__link">About</a></li>
-            <li class="navbar__list__item"><a href="#projects" class="navbar__link">Projects</a></li>
-            <li class="navbar__list__item"><a href="#pricing" class="navbar__link">Pricing</a></li>
-            <li class="navbar__list__item"><a href="#services" class="navbar__link">Services</a></li>
-            <li class="navbar__list__item"><a href="#contact" class="navbar__link">Contact</a></li>
+            <li class="navbar__list__item move"><a href="#about" class="navbar__link">About</a></li>
+            <li class="navbar__list__item move"><a href="#projects" class="navbar__link">Projects</a></li>
+            <li class="navbar__list__item move"><a href="#services" class="navbar__link">Services</a></li>
+            <li class="navbar__list__item move"><a href="#pricing" class="navbar__link">Pricing</a></li>
+            <li class="navbar__list__item move"><a href="#contact" class="navbar__link">Contact</a></li>
         </ul>
     </nav>
     <header class="header header__index">
@@ -32,78 +30,54 @@
         </div>
     </div>
     </header>
-<!-- Main -->
-<main>
-    <article class="biography">
-        <h1 class="heading underline" id="about">About</h1>
-        <img src="img/tyler.png" alt="tyler" class="sumnall">
-        <div class="biography__container">
-            <h1 class="margin-bottom-small capitalise" >who are we?</h1>
-            <p class="margin-bottom-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dignissimos architecto voluptatem aperiam rem saepe laboriosam ea, iste praesentium aliquam earum perferendis, veritatis vitae consequatur, eius odit consequuntur quaerat repudiandae!</p>
-            <p class="margin-bottom-small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio aperiam id vero dignissimos sed unde enim nulla corrupti? Corporis qui eligendi quam quae laudantium, amet beatae dolor ut veniam animi.</p>
-        </div>
-    </article>
-    <div class="container">
-        <div class="container__item container__item--projects">Animate with scaling picture and random projects as background (javascript), maybe change it ecery so many seconds?</div>
-        <div class="container__item container__item--strategy">Strategy</div>
-        <div class="container__item container__item--capabilities">Capabilities</div>
-    </div>
-    <h1 class="heading underline" id="projects">Projects</h1>
-    <div class="carousel">
-        <div class="carousel__container">
-            <div class="carousel__container__arrows">left</div>
-            <div class="carousel__container__content">
-                <img src="img\logo.png" alt="logo" class="carousel__image">
-                <div class="carousel__info">
-                    <h1 class="carousel__info--name margin-bottom-small">Project Name</h1>
-                    <p class="carousel__info--description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A repellat hic, maiores praesentium reprehenderit, culpa sint recusandae facilis enim commodi porro temporibus aut. Unde dolore neque esse, doloremque perspiciatis quia.</p>
-                </div>
-            </div>
-            <div class="carousel__container__arrows">right</div>
-        </div>
-    </div>
-    <div class="services__container">
 
-        <h1 class="heading underline" id="services">Services</h1>
-        <div class="container container--services">
-            <div class="container__item container__item--service">Animate with scaling picture and random projects as background (javascript), maybe change it ecery so many seconds?</div>
-            <div class="container__item container__item--service">Strategy</div>
-            <div class="container__item container__item--service">Capabilities</div>
-            <div class="container__item container__item--service">Capabilities</div>
-        </div>
-        <!-- <div class="projects-container">
-            <article class="past-work">
-                <div class="example-projects">
-                    carosel?
+    <main>
+        <!-- about -->
+        <div class="container"">
+            <article class="about" id="about">
+                <h1 class="heading">about</h1>
+                <blockquote><h2 class="heading--quote">anomalous</h2>
+                <p class="text-block__quote">deviating from what is standard, normal or expected. <cite> - "an anomalous situation"</cite></p></blockquote>
+                <p class="text-block">We are called Anomalous - Content and Designs because that is exactly what we provide.
+                In a time where every Man, Woman and Ferrit have their own brand, it is important to stand out from the crowd and be... Anomalous.</p>
+                <div class="flexrow margin-top-small">
+                    <div class="flexrow__item"><div class="flexrow__item--content projectExample"></div><h1 class="item-header">Projects</h1></div>
+                    <div class="flexrow__item"><div class="flexrow__item--content strategy"></div><h1 class="item-header">strategy</h1></div>
+                    <div class="flexrow__item"><div class="flexrow__item--content capabilities"></div><h1 class="item-header">capabilities</h1></div>
                 </div>
+                
+            </article> 
+        </div>
+        <div class="container container--black white-text">
+            <article class="projects" id="projects">
+                <h1 class="heading">projects</h1> 
+                <div class="carousel"></div>
             </article>
-        </div> -->
-    </div>
+        </div>
+        <div class="container">
+            <article class="services" id="services">
+                <h1 class="heading">Services</h1> 
+                <div class="carousel"></div>
+            </article>
+        </div>
+        <!-- pricing -->
+        <div class="container container--black white-text">
+            <article class="pricing" id="pricing">
+                <h1 class="heading">pricing</h1> 
+                <div class="carousel"></div>
+            </article>
+        </div>
+        <!-- contact -->
+        <div class="container ">
+            <article class="contact" id="contact">
+                <h1 class="heading">contact us</h1> 
+                <div class="carousel"></div>
+            </article>
+        </div>
     </main>
-    
-
-    <!-- Footer -->
-<footer class="footer">
-    <h1 class="heading" id="contact">Contact</h1>
-        <div class="footer__content-box"><ul class = "footer__list">
-            <li>Phone Number: 12345 1234567</li>
-           
-            <li>Email Address: somebody123@email.com</li>
-            <li><ul class = "footer__list">
-                <li>Address: Somewhere Street</li>
-                <li>M8 D01</li>
-                <li>Great Kingdom</li>
-            </ul>
-        </li>
-    </ul></div>
-    </div>
-    <h1 class="navbar__logo footer__anomalous">anom<span class ="navbar__logo--secondary footer__anomalous--secondary">a</span>lous</h1>
-    <img class = "footer__logos" src="img/facebook.png" alt="facebook logo">
-    <img class = "footer__logos" src="img/instagram.png" alt="instagram logo">
-    <div class="footer__container">
-    </div>
-    <p class="copyright">Anomalous - Content and Design &copy; <span id ="date">date</span></p>
-</footer>
-<script src="index.js"></script>
+    <footer class="footer white-text">
+        <p class="copyright">Anomalous - Content and Design &copy; <span id ="date">date</span></p>
+    </footer>
+    </footer>
 </body>
-</html>
+<script src="index.js"></script>
