@@ -37,27 +37,73 @@
             <article class="about" id="about">
                 <h1 class="heading">about</h1>
                 <blockquote><h2 class="heading--quote">anomalous</h2>
-                <p class="text-block__quote">deviating from what is standard, normal or expected. <cite> - "an anomalous situation"</cite></p></blockquote>
+                <p class="text-block__quote">Deviating from what is standard, normal or expected. <cite> - "an anomalous situation"</cite></p></blockquote>
                 <p class="text-block">We are called Anomalous - Content and Designs because that is exactly what we provide.
-                In a time where every Man, Woman and Ferrit have their own brand, it is important to stand out from the crowd and be... Anomalous.</p>
+                In a time where every Man, Woman and their Ferrit have their own brand, it is important to stand out from the crowd and be... Anomalous.</p>
                 <div class="flexrow margin-top-small">
-                    <div class="flexrow__item"><div class="flexrow__item--content projectExample"></div><h1 class="item-header">Projects</h1></div>
-                    <div class="flexrow__item"><div class="flexrow__item--content strategy"></div><h1 class="item-header">strategy</h1></div>
-                    <div class="flexrow__item"><div class="flexrow__item--content capabilities"></div><h1 class="item-header">capabilities</h1></div>
+                    <div class="flexrow__item"><a href="#services"><div class="flexrow__item--content strategy"></div><h1 class="item-header">Strategy</h1></a></div>
+                    <div class="flexrow__item"><a href="#services"><div class="flexrow__item--content capabilities"></div><h1 class="item-header">Capabilities</h1></a></div>
                 </div>
                 
             </article> 
         </div>
+        <!-- Projects -->
         <div class="container container--black white-text">
             <article class="projects" id="projects">
-                <h1 class="heading">projects</h1> 
-                <div class="carousel"></div>
+                <h1 class="heading">projects</h1>
+                <!-- carousel container -->
+                <div class="carousel-container">
+                    <div class="slide">
+                        <div class="design">Image here</div>
+                        <div class="design-info">
+                            <h1>Product Name 1</h1>
+                            <p>Product infomation</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="design">Image here</div>
+                        <div class="design-info">
+                            <h1>Product Name 1</h1>
+                            <p>Product infomation</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="design">Image here</div>
+                        <div class="design-info">
+                            <h1>Product Name 1</h1>
+                            <p>Product infomation</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="design">Image here</div>
+                        <div class="design-info">
+                            <h1>Product Name 1</h1>
+                            <p>Product infomation</p>
+                        </div>
+                    </div>
+                </div>  
+                <div class="btn-container">
+                    <button type="button" class= "prevBtn carousel-btn">Prev</button>
+                    <button type="button" class= "nextBtn carousel-btn">Next</button>
+                </div>   
             </article>
         </div>
+        <!-- Services -->
         <div class="container">
             <article class="services" id="services">
                 <h1 class="heading">Services</h1> 
-                <div class="carousel"></div>
+                <!-- <div class="flexrow flexrow--tworow margin-top-small">
+                    <div class="flexrow__item flexrow__item--tworowitem"><div class="flexrow__item--content strategy"></div><h1 class="item-header">strategy</h1></div>
+                    <div class="flexrow__item flexrow__item--tworowitem"><div class="flexrow__item--content strategy"></div><h1 class="item-header">strategy</h1></div>
+                    <div class="flexrow__item flexrow__item--tworowitem"><div class="flexrow__item--content strategy"></div><h1 class="item-header">strategy</h1></div>
+                    <div class="flexrow__item flexrow__item--tworowitem"><div class="flexrow__item--content strategy"></div><h1 class="item-header">strategy</h1></div>
+                </div> -->
+                <div class="flexrow margin-top-small">
+                    <div class="flexrow__item flexrow__item--tall"><div class="flexrow__item--content strategy"></div><h1 class="item-header">Marketing</h1></div>
+                    <div class="flexrow__item flexrow__item--tall"><div class="flexrow__item--content strategy"></div><h1 class="item-header">Design</h1></div>
+                    <div class="flexrow__item flexrow__item--tall"><div class="flexrow__item--content strategy"></div><h1 class="item-header">Website Development</h1></div>
+                    <div class="flexrow__item flexrow__item--tall"><div class="flexrow__item--content strategy"></div><h1 class="item-header">Social Media Management</h1></div>
+                </div>
             </article>
         </div>
         <!-- pricing -->
@@ -71,7 +117,29 @@
         <div class="container ">
             <article class="contact" id="contact">
                 <h1 class="heading">contact us</h1> 
-                <div class="carousel"></div>
+                <div class="container--form">
+                    <form action="mailto:BHaslam1998@gmail.com">
+                  
+                      <label for="fname">First Name</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  
+                      <label for="lname">Last Name</label>
+                      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                  
+                      <label for="country">Country</label>
+                      <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">UK</option>
+                      </select>
+                  
+                      <label for="subject">Subject</label>
+                      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                  
+                      <input type="submit" value="Submit">
+                  
+                    </form>
+                  </div>
             </article>
         </div>
     </main>
