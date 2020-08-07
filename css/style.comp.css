@@ -339,21 +339,6 @@ label {
 .align-right {
   text-align: right !important; }
 
-.actionBtn {
-  background-color: #a10000;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  color: #e0e0e0; }
-  .actionBtn:hover {
-    background-color: #be0000;
-    transform: scale(1.02); }
-  .actionBtn:active {
-    background-color: #a10000; }
-  .actionBtn__link {
-    text-decoration: none; }
-
 .logo {
   width: 25vw; }
 
