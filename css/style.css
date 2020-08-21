@@ -377,28 +377,34 @@ label {
     height: 100%;
     width: 100%;
     display: flex;
-    flex-direction: column;
     margin-bottom: 2rem;
     position: absolute;
     transform: translateX(-100%); }
   .carousel__article {
-    border-radius: 1rem;
     overflow: hidden;
     display: flex;
-    flex: 1 0;
-    margin: 1rem;
-    border: 1px solid white; }
+    margin: 2rem 4rem;
+    min-height: 100%;
+    flex-direction: column; }
   .carousel__design {
     height: auto;
-    max-width: 18%;
-    background: white; }
+    width: 75%; }
+    .carousel__design--container {
+      background: white;
+      display: flex;
+      justify-content: center;
+      border: 0.5rem solid #0f0f0f;
+      border-radius: 1rem  1rem 0 0;
+      height: 50%; }
     .carousel__design:hover {
       cursor: pointer; }
   .carousel__info {
     font-size: 2rem;
     font-weight: 300; }
     .carousel__info--container {
-      padding: 1rem; }
+      padding: auto;
+      border: .3rem solid white;
+      border-radius: 0 0 .5rem .5rem; }
   .carousel--btn {
     z-index: 5;
     display: flex;
