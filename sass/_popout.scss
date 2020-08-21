@@ -1,0 +1,118 @@
+.article-location{
+    display:relative;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+
+}
+.popout{
+&__container{
+    display: flex;
+    width: 100%;
+    justify-content:center;
+    position: relative;
+    flex-wrap:wrap;
+    
+}
+
+&__window{
+    display: relative;
+    background-color: black;
+    // border: 5px solid black;
+    height: 100%;
+    padding:2vw;
+}
+
+&__header{
+    font-size:3vw;
+    color: white;
+    @media(max-width: 90px){
+        font-size: 4vw;
+                   }
+    &--container{
+       display: flex;
+    }
+}
+&__quote{
+
+    color: white;
+    font-size: 2vw;
+    margin-top: 1vw;
+    @media(max-width: 900px){
+        font-size: 2.5vw;
+           }
+}
+
+&__text{
+    color: rgb(209, 209, 209);
+    font-size: 1.3vw;
+    margin-top: 2vw;
+    &--container{
+
+        margin: 10vh;
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+  
+    
+       @media(max-width: 650px){
+   height: 100%;
+   margin:5vh;
+      }
+    }
+    @media(max-width: 900px){
+font-size: 1.8vw;
+           }
+           @media(max-width: 750px){
+            font-size: 2.2vw;
+                       }
+                       @media(max-width: 600px){
+                        font-size: 2.6vw;
+                                   }
+                                   @media(max-width: 400px){
+                                    font-size: 3.2vw;
+                                               }
+ }
+
+ &__link{
+    transition:all .25s;
+    display: inline;
+    &:active,&:link,&:visited{
+
+        color:white;
+        text-shadow: 2px 2px rgb(71, 0, 0);}
+        &:hover{
+          transition:all .25s;
+          transform:translateY(-5px);
+            color:rgb(190, 190, 190);
+        }
+}
+ }
+
+
+.delete-btn{
+position: absolute;
+right:1.5vw;
+top: 1.5vw;
+background-color: rgb(161, 0, 0);
+color: white;
+padding: 12px 20px;
+border: 2px solid white;
+border-radius: 4px;
+cursor: pointer;
+z-index: 1000;
+@media(max-width: 750px){
+    padding:6px 10px;
+    top:90vh;
+}
+&:hover,&active{
+    background-color: rgb(200,0,0);
+}
+
+}
+
+// .copyWriting{
+//     font-size:3vh !important;
+// }

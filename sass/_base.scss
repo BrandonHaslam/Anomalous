@@ -1,0 +1,38 @@
+:root{
+    --color-red:rgb(255, 0, 0);
+    }
+    *{
+        margin:0;
+        padding:0;
+    }
+    
+    *,*::before,*::after{
+        box-sizing: inherit;
+    }
+    html{
+        box-sizing: border-box;
+        font-size: 62.5%;
+        scroll-behavior: smooth;
+    }
+    body {
+        font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            position: relative;
+    //     Medium 500
+    // Extra-bold 800
+    // Black 900
+        
+        min-height: 100vh;
+        max-width: 100vw
+    }
+    // main{
+    //     background-image: linear-gradient(rgba(255, 255, 255, 1),rgba(255, 255, 255, .5),rgba(125, 125, 125, 0.5),rgba(125, 125, 125, 0.75),rgba(0,0,0,0.5),rgba(0,0,0,.75),rgb(0,0,0));
+    // }
+    cite{
+        color:rgb(219, 0, 0)
+    }
+    a{
+        display: block;
+        height:100%;
+        width:100%;
+    }

@@ -1,8 +1,3 @@
-// let navbar = document.querySelector(".navbar");
-
-// document.addEventListener("scroll", function(){
-//     navbar.classList.add("white")
-// })
 // copyright update
 copyrightDate = document.getElementById("date");
 let date = new Date();
@@ -10,47 +5,63 @@ let year = date.getFullYear();
 let day = date.getDay();
 copyrightDate.innerText = year;
 
-
-const slides = document.querySelectorAll(".slide");
+// Carousel
+const slides = document.querySelectorAll(".carousel__slide");
 const nextBtn = document.querySelector(".nextBtn");
 const prevBtn = document.querySelector(".prevBtn");
 
-slides.forEach(function(slide,index){
-    slide.style.left = `${index *100}%`
+slides.forEach(function (slide, index) {
+    slide.style.left = `${index * 100}%`
 })
 
 let counter = 0;
 
-nextBtn.addEventListener("click", function(){
+nextBtn.addEventListener("click", function () {
     counter++;
     carousel()
 });
-prevBtn.addEventListener("click", function(){
+prevBtn.addEventListener("click", function () {
     counter--;
     carousel();
 });
 
-function carousel(){
-    slides.forEach(function(slide){
+function carousel() {
+    slides.forEach(function (slide) {
         // working with slides
-        if (counter===slides.length){
-            counter=0;
+        if (counter === slides.length) {
+            counter = 0;
         }
-        if(counter<0){
+        if (counter < 0) {
             counter = slides.length - 1
         }
 
-        slide.style.transform = `translateX(-${counter*100}%)`
+        slide.style.transform = `translateX(-${counter * 100}%)`
     })
 }
 
+// Carousel Designs Popout
+let design = document.querySelectorAll(".carousel__design")
+let enhanceContainer = document.querySelector(".enhance--container")
+let enhance = document.querySelector(".enhance")
+design.forEach(function (e) {
+    e.addEventListener("click", function () {
+        let designSrc = e.src;
+        let remove = document.getElementById("delete");
+        enhance.src = designSrc
+        enhanceContainer.classList.add("show")
+        remove.addEventListener("click", () => {
+            enhanceContainer.classList.remove("show")
+            enhance.src = ""
+        })
 
+    })
+})
 // Pop out buttons
 
 let btn = document.querySelectorAll(".button")
 let articleLocation = document.querySelector(".popout__container")
 const articles = {
-    webDev:`     <div class="article-location">
+    webDev: `     <div class="article-location">
     <button type="button" class="delete-btn">Go Back</button>
     <div class="popout__window">
         <div class="popout__container--container">
@@ -70,7 +81,7 @@ const articles = {
     </div>
     </div>
     `,
-    socialMedia:`      <div class="article-location">
+    socialMedia: `      <div class="article-location">
     <button type="button" class="delete-btn">Go Back</button>
     <div class="popout__window">
         <div class="popout__container--container">
@@ -96,7 +107,7 @@ const articles = {
     </div>
     </div>
 </div> `,
-    brandDesign:`          <div class="article-location">
+    brandDesign: `          <div class="article-location">
     <button type="button" class="delete-btn">Go Back</button>
     <div class="popout__window">
         <div class="popout__container">
@@ -140,13 +151,13 @@ const articles = {
         <p class="popout__text">Get in touch today by using our contact form at the bottom of our website.</p>
     </div>
     </div>`
-    }
+}
 
 
 
 
-btn.forEach(function(e){
-    e.addEventListener("click",()=>{
+btn.forEach(function (e) {
+    e.addEventListener("click", () => {
         console.log(e.id);
         let id = e.id
         const article = document.createElement("div")
@@ -157,9 +168,10 @@ btn.forEach(function(e){
         articleLocation.appendChild(article)
 
         const deleteBtn = document.querySelector(".delete-btn");
-        deleteBtn.addEventListener("click", function(e){ 
+        deleteBtn.addEventListener("click", function (e) {
             const element = e.currentTarget.parentElement.parentElement;
-            articleLocation.removeChild(element);});
+            articleLocation.removeChild(element);
+        });
     })
 })
 
@@ -172,7 +184,7 @@ btn.forEach(function(e){
 //         <h1 class="popout__quote">Social Media Management</h1>
 //         <h3 class="popout__header">“Do less, be more”</h3>
 //     </div>
-    
+
 //     <div class="popout__text--container">
 //     <p class="popout__text">So you’re up and running online, you’ve spent hours making sure it looks amazing and all the
 //         relevant information is available to your customers. You start posting daily content and then

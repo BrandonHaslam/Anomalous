@@ -1,0 +1,330 @@
+// @media (max-width: 979px) {
+//     /* Selectors and styles affecting screens UP TO 979px (Desktop) */
+//   }
+  
+//   @media (max-width: 767px) {
+//       /* Selectors and styles affecting screens UP TO 767px (Tablet) */
+//   }
+  
+//   @media (max-width: 480px) {
+//       /* Selectors and styles affecting screens UP TO 480px (Phone) */
+//   }
+// header{
+//     border: 2px solid black;
+// }
+.container{
+    position: relative;
+    min-height: 90vh;
+    max-width: 100vw;
+    padding:3vw 10vw;
+    // border: 2px solid black;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: stretch;
+    &--services{
+        position: relative;
+        min-height: 90vh;
+        max-width: 100vw;
+        padding:3vw 10vw;
+        // border: 2px solid black;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        align-items: stretch;
+        @media (max-width:767px){
+            padding:0;
+            min-height: 100vh;
+        }
+    }
+    @media (max-width:767px){
+        padding:2.5vw 5vw;
+    }
+    @media(min-height:1000px){
+    max-height: 100vw;
+    }
+
+    &--black{
+        background-color: rgb(12, 12, 12);
+    }
+    &--pricing{
+        background-image: url(../img/pricing.jpg);
+        background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/pricing.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+   
+}
+.fas{
+    font-size: 5vw;
+    color:black;
+}
+
+article{
+  width:100%;
+  min-height:100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+// headings
+.heading{
+    text-transform: uppercase;
+    font-size: 6vw;
+    position: relative;
+    margin-bottom: 1vw;
+    font-weight: 400;
+    // fancier underline
+    &::after{
+        margin: 0 auto;
+        display: block;
+        content: "";
+        width:5vw;
+        border-bottom:.5vw dotted rgb(255, 0, 0);
+    } 
+    &--services{
+        @media(max-width:767px) {
+            display:none;
+        }
+    }
+}
+
+.heading--quote{
+    font-size: 1.5vw;
+    @media (max-width: 1050px) {
+        font-size: 2vw;
+   }
+}
+
+.text-block{
+    text-align: justify;
+    font-size:1.5vw;
+    letter-spacing: .2vw;
+    color:rgb(37, 37, 37);
+    line-height:1.8vw;
+    margin-bottom: 3vw;
+   @media (max-width: 1050px) {
+       font-size: 2.2vw;
+       line-height:2.7vw;
+       margin-bottom: 3.2vw;
+  }
+  
+  @media (max-width: 767px) {
+    font-size:2.7vw;
+    line-height:3.2vw;
+    margin-bottom: 3.7vw;
+  }
+  @media (max-width: 600px) {
+    font-size: 3.5vw;
+    line-height:4vw;
+    margin-bottom: 4.5vw;
+      }
+      @media (max-width: 450px) {
+        font-size:4vw;
+        line-height:4.5vw;
+        margin-bottom: 5vw;
+        }
+        @media (max-width: 350px) {
+            font-size:4.5vw;
+            line-height:5vw;
+            margin-bottom: 5.5vw;
+            }
+//   @media (max-width: 480px) {
+//       /* Selectors and styles affecting screens UP TO 480px (Phone) */
+//   }
+&--center{
+    text-align: center;
+}
+    // &::after{
+    //     margin: 1.5vw auto;
+    //     display: block;
+    //     content: "";
+    //     width:5vw;
+    //     border-bottom:.3vw dotted rgb(255, 54, 54);
+    // } 
+    &__quote{
+        font-size:1.5vw;
+        text-transform: uppercase !important;
+        font-weight: 800;
+        @media (max-width: 1050px) {
+            font-size: 2.2vw;
+           
+       }
+       
+       @media (max-width: 767px) {
+         font-size:2.7vw;
+      
+       }
+       @media (max-width: 600px) {
+         font-size: 3.5vw;
+      
+           }
+           @media (max-width: 450px) {
+             font-size:4vw;
+         
+             }
+             @media (max-width: 350px) {
+                 font-size:4.5vw;
+
+                 }
+    }
+}
+.red{
+    color:red
+}
+
+
+.projectExample{
+    background-image: url(../img/TiggerThoughts.jpg);
+}
+
+
+
+#webDev{background-image:url(../img/webDev.jpg);}
+#socialMedia{background-image:url(../img/socials.jpg);}
+#brandDesign{background-image:url(../img/design.jpg);}
+#copyWriting{background-image:url(../img/copywrite.jpg);}
+
+.capabilities{
+    background-image: url(../img/capabilities.jpg);
+}
+
+.item-header{
+z-index: 2;
+position: absolute;
+// for bottom put at 0
+bottom:50%;
+left:50%;
+cursor: pointer;
+// for bottom but at -50,0
+transform:translate(-50%,50%);
+font-size: 1.8vw;
+font-weight: 400;
+color:white;
+text-shadow: black 2px 2px;
+@media (max-width: 768px) {
+   font-size:5vw;
+     }
+}
+
+.about{
+    background-image: url(/img/landingBack.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__header{
+        text-align: justify;
+    font-size:1.2vw;
+    letter-spacing: .2vw;
+    color:rgb(37, 37, 37);
+    line-height:1.5vw;
+    margin-bottom: 3vw;
+    }
+}
+
+// Pricing
+.pricing{
+display:flex;
+justify-content: space-evenly;
+&-quote{
+font-size: 2vw;
+line-height: 2.5vw;
+color:rgb(230, 230, 230);
+margin: 4vh 10vh;
+@media (max-width: 979px) {
+    font-size: 3.5vw;
+    line-height:5vw;
+    margin:3vh 0;
+    }
+}
+}
+// Foooter
+.footer{ display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: black;
+    height: 20vh;
+    text-align: center;
+}
+// margins 
+.margin-top-small{
+margin-top: 5vh;
+}
+
+// text-color
+.white-text{
+    color:white !important;
+  }
+
+
+
+  /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: rgb(161, 0, 0);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+
+  input[type=submit]:active,  input[type=submit]:hover  {
+    background-color: rgb(200, 0, 0);
+  }
+  label{
+      font-size: 1.5rem;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container--form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+.underline{
+    text-decoration: underline;
+}
+
+.align-left{
+    text-align: left !important;
+}
+
+.align-right{
+    text-align: right !important;
+}
+.actionBtn{
+    background-color: rgb(161, 0, 0);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color:rgb(224, 224, 224);
+    &:hover{
+        background-color: rgb(190, 0, 0);
+        transform:scale(1.02);
+    }
+    &:active{
+        background-color: rgb(161, 0, 0);
+        
+    }
+    &__link{
+        text-decoration: none;
+   
+ 
+    }
+}
