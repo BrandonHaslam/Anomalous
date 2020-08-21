@@ -16,36 +16,43 @@
     &__slide{
         height: 100%;
         width:100%;
-    
         display: flex;
-        flex-direction: column;
-
     margin-bottom: 2rem;
     position:absolute;
    transform:translateX(-100%);
 }
     &__article{
-        border-radius: 1rem;
         overflow: hidden;
         display:flex;
-        flex:1 0;
-        margin:1rem;
-        border:1px solid white;
+        margin: 2rem 4rem;
+        min-height: 100%;
+        flex-direction: column;
+        
     }
     &__design{
         height: auto;
-    max-width: 18%;
+        width: 75%;
+       
+      &--container{
         background:white;
+        display: flex;
+        justify-content: center;
+        border: .5rem solid rgb(15,15,15);
+        border-radius:1rem  1rem 0 0;
+        height:50%;
+      }
         &:hover{
             cursor: pointer;
         }
+       
     }
     &__info{
         font-size:2rem;
         font-weight:300;
         &--container{
-            padding:1rem;
-
+            padding:auto;
+            border:.3rem solid white;
+            border-radius: 0 0 .5rem .5rem;
         }
     }
     &__header{
