@@ -298,6 +298,9 @@ label {
 
 .logo {
   width: 25vw; }
+  @media (max-width: 768px) {
+    .logo {
+      width: 40vw; } }
 
 .header {
   position: relative;
@@ -341,8 +344,8 @@ label {
   @media (max-width: 480px) {
     .navbar {
       margin-top: 0;
-      height: 8.5vh;
-      font-size: 3vw; } }
+      height: 20vh;
+      font-size: 4vw; } }
   .navbar__list {
     flex-wrap: wrap;
     list-style: none;
@@ -351,7 +354,8 @@ label {
   .navbar__link {
     flex-grow: 2;
     transition: all .5s;
-    margin: 0 2vw; }
+    margin: 0 2vw;
+    padding: .5rem 0; }
     .navbar__link:active, .navbar__link:link, .navbar__link:visited {
       text-decoration: none;
       color: black; }
@@ -487,6 +491,11 @@ label {
   max-height: 75%;
   max-width: 50%;
   padding: auto; }
+  @media (max-width: 1000px) {
+    .enhance {
+      max-height: 100vw;
+      max-width: 100%;
+      padding: auto 0; } }
   .enhance--container {
     position: relative;
     display: flex;
