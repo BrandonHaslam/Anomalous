@@ -491,10 +491,10 @@ label {
   max-height: 75%;
   max-width: 50%;
   padding: auto; }
-  @media (max-width: 1000px) {
+  @media (max-width: 550px) {
     .enhance {
-      max-height: 100vw;
-      max-width: 100%;
+      max-height: 100%;
+      max-width: 50%;
       padding: auto 0; } }
   .enhance--container {
     position: relative;
@@ -518,7 +518,14 @@ label {
   border: none;
   border-radius: 1rem;
   outline: none;
-  padding: 1rem; }
+  padding: 1rem;
+  font-size: 5rem;
+  z-index: 10; }
+  #delete:hover {
+    cursor: pointer;
+    color: red; }
+  #delete:active {
+    color: #aa0000; }
 
 #indigo {
   margin: auto 0; }
@@ -535,15 +542,6 @@ label {
   @media (max-width: 550px) {
     .flaticon__button {
       color: black; } }
-
-.flaticon-close {
-  font-size: 5rem;
-  z-index: 10; }
-  .flaticon-close:hover {
-    cursor: pointer;
-    color: red; }
-  .flaticon-close:active {
-    color: #aa0000; }
 
 /*
     Flaticon icon font: Flaticon
