@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 21/08/2020 14:05
+    Creation date: 24/08/2020 22:44
     */
 
     @font-face {
@@ -36,8 +36,11 @@
   -webkit-font-smoothing: antialiased;
     }
 
-    .flaticon-left-chevron:before { content: "\f100"; }
-.flaticon-right:before { content: "\f101"; }
+    .flaticon-close:before { content: "\f100"; }
+.flaticon-left-chevron:before { content: "\f101"; }
+.flaticon-right-chevron:before { content: "\f102"; }
     
-    $font-Flaticon-left-chevron: "\f100";
-    $font-Flaticon-right: "\f101";
+    $font-Flaticon-close: "\f100";
+    $font-Flaticon-left-chevron: "\f101";
+    $font-Flaticon-right-chevron: "\f102";
+

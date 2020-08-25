@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 21/08/2020 14:05
+  	Creation date: 24/08/2020 22:44
   	*/
 
 @font-face {
@@ -25,10 +25,11 @@
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
   font-family: Flaticon;
-
+       
 font-style: normal;
 
 }
 
-.flaticon-left-chevron:before { content: "\f100"; }
-.flaticon-right:before { content: "\f101"; }
+.flaticon-close:before { content: "\f100"; }
+.flaticon-left-chevron:before { content: "\f101"; }
+.flaticon-right-chevron:before { content: "\f102"; }

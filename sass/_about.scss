@@ -1,0 +1,14 @@
+.about{
+    background-image: url(/img/landingBack.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__header{
+        text-align: justify;
+    font-size:1.2vw;
+    letter-spacing: .2vw;
+    color:rgb(37, 37, 37);
+    line-height:1.5vw;
+    margin-bottom: 3vw;
+    }
+}

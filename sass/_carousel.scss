@@ -1,9 +1,25 @@
 .projects{
     height:92vh;
     max-width: 100%;
-    padding: 5rem 10rem;
+    padding: 2rem 7rem;
     background:rgb(228,228,230);
     position: relative;
+    @media(max-width: 1250px){
+        padding:1rem 6rem;
+        height:95vh;
+    }
+    @media(max-width: 1000px){
+       height:50vh;
+        }
+        @media(max-width: 850px){
+            height:35vh;
+            padding:.5rem 3rem;
+             }
+             @media(max-width: 550px){
+                height:30vh;
+                padding:0rem;
+                 }
+        
 }
 .carousel{
     position: relative;
@@ -20,26 +36,46 @@
     margin-bottom: 2rem;
     position:absolute;
    transform:translateX(-100%);
+   
 }
     &__article{
         overflow: hidden;
         display:flex;
-        margin: 2rem 4rem;
-        min-height: 100%;
+        margin: 2rem 2.5rem;
         flex-direction: column;
-        
+        flex:1 0;
+        @media(max-width: 1250px){
+            margin:1rem;
+        }
+        @media(max-width: 1000px){
+           margin:0;
+        }
     }
     &__design{
         height: auto;
         width: 75%;
-       
+        margin:auto 0;
+        @media(max-width:1250px){
+          width: 100%;
+        }
       &--container{
+          overflow: hidden;
         background:white;
         display: flex;
         justify-content: center;
-        border: .5rem solid rgb(15,15,15);
-        border-radius:1rem  1rem 0 0;
-        height:50%;
+        border: .4rem solid rgb(15,15,15);
+        border-radius:1rem;
+        min-height:50%;
+        margin:0 auto;
+        padding:0 auto;
+        
+        @media(max-width: 1000px){
+            height:50vh;
+            border: .2rem solid rgb(15,15,15);
+             }
+             @media(max-width: 550px){
+                border-radius:0;
+                 }
       }
         &:hover{
             cursor: pointer;
@@ -47,16 +83,25 @@
        
     }
     &__info{
-        font-size:2rem;
+        font-size:1.8rem;
         font-weight:300;
+        @media(max-width: 1250px){
+          font-size:1.6rem;
+        }
         &--container{
-            padding:auto;
-            border:.3rem solid white;
-            border-radius: 0 0 .5rem .5rem;
+            padding:1rem;
+            text-align: justify;
+            @media(max-width: 1250px){
+              text-align: center;
+            }
+            @media(max-width: 1000px){
+            display:none;
+            }
         }
     }
     &__header{
-        
+        text-align: center;
+        margin:.5rem 0 1rem;
     }
     &--btn{
         z-index: 5;
@@ -70,12 +115,19 @@
         align-items: center;
         justify-content: center;
         top:0;
+        @media(max-width: 1250px){
+            width:6.5%;
+        }
+        @media(max-width:550px){
+            width:10%;
+        }
+
         &:hover{
             background:rgba(131, 131, 131, 0.418);
             cursor: pointer;
             
         }
-        &:hover .flaticon{
+        &:hover .flaticon__button{
             color:black;
             transform:scale(1.2);
             
@@ -88,15 +140,13 @@
         }
     }
 }
-.flaticon{
-    font-size:5rem;
-    color:rgba(15,15,15,.5)
-}
+
 .enhance{
-    display: block;
+    display: inline-block;
     max-height: 75%;
     max-width:50%;
     padding:auto;
+
     &--container{
         position: relative;
         display: flex;
@@ -117,5 +167,42 @@
     position:absolute;
     top:5vh;
     right:5vw;
+    border:none;
+    border-radius:1rem;
+    outline:none;
+    padding:1rem;
 }
+
+#indigo{
+    margin:auto 0;
+}
+#alex{
+    margin:auto 0;
+}
+
+
+.flaticon{
+    &__button{
+        font-size:5rem;
+        color:rgba(15,15,15,.5);
+        @media(max-width:1250px){
+            font-size:3rem;
+        }
+        @media(max-width:550px){
+            color:black;
+        }
+        
+    }
+    &-close{
+        font-size:5rem;
+        z-index: 10;
+        &:hover{
+            cursor: pointer;
+            color:red;
+        }
+        &:active{
+            color:rgb(170, 0, 0);
+        }
+    }
+  }
 
